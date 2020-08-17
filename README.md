@@ -38,6 +38,6 @@ them within the app through the menu.
 If you don't yet have a reseller ID, apply to become a reseller through
 the [Android Enterprise Partner portal](https://www.androidenterprise.dev).
 
-To set up your service account, follow the instructions [here]
-(https://developers.google.com/zero-touch/guides/auth). You can then copy the entire
+To set up your service account, follow the instructions
+[here](https://developers.google.com/zero-touch/guides/auth). You can then copy the entire
 contents of the JSON file into the app / managed configuration.
