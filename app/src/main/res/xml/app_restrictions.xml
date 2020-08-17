@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<restrictions xmlns:android="http://schemas.android.com/apk/res/android">
+    <restriction
+        android:key="service_account"
+        android:title="@string/service_account_title"
+        android:restrictionType="string"
+        android:description="@string/service_account_description"
+        android:defaultValue="" />
+    <restriction
+        android:key="reseller_id"
+        android:title="@string/reseller_id_title"
+        android:restrictionType="string"
+        android:description="@string/reseller_id_description"
+        android:defaultValue="" />
+    <restriction
+        android:key="username"
+        android:title="@string/username_title"
+        android:restrictionType="string"
+        android:description="@string/username_description"
+        android:defaultValue="" />
+    <restriction
+        android:key="firestore_applicationid"
+        android:title="@string/firestore_applicationid_title"
+        android:restrictionType="string"
+        android:description="@string/firestore_applicationid_description"
+        android:defaultValue="" />
+    <restriction
+        android:key="firestore_apikey"
+        android:title="@string/firestore_apikey_title"
+        android:restrictionType="string"
+        android:description="@string/firestore_apikey_description"
+        android:defaultValue="" />
+    <restriction
+        android:key="firestore_databaseurl"
+        android:title="@string/firestore_databaseurl_title"
+        android:restrictionType="string"
+        android:description="@string/firestore_databaseurl_description"
+        android:defaultValue="" />
+    <restriction
+        android:key="firestore_storagebucket"
+        android:title="@string/firestore_storagebucket_title"
+        android:restrictionType="string"
+        android:description="@string/firestore_storagebucket_description"
+        android:defaultValue="" />
+    <restriction
+        android:key="firestore_projectid"
+        android:title="@string/firestore_projectid_title"
+        android:restrictionType="string"
+        android:description="@string/firestore_projectid_description"
+        android:defaultValue="" />
+</restrictions>

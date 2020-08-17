@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Refresh customer list" android:id="@+id/refresh_customer_list"/>
+    <item android:title="Setup account" android:id="@+id/change_service_account"/>
+</menu>

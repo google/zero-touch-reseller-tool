@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/listview_customers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/customer_list_background_selector"
+        android:outlineAmbientShadowColor="#FFFFFF"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:choiceMode="singleChoice"
+        android:listSelector="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/customer_label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/devices_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/device_label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="@+id/listview_customers"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <ListView
+        android:id="@+id/listview_devices"
+        android:choiceMode="multipleChoice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/devices_label"
+        app:layout_constraintTop_toBottomOf="@+id/devices_label">
+    </ListView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:onClick="add_device"
+        android:text="@string/add_button_label"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/listview_devices"
+        app:layout_constraintEnd_toEndOf="@+id/listview_devices" />
+
+    <Button
+        android:id="@+id/add_customer"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:onClick="add_customer"
+        android:text="@string/add_customer_label"
+        app:layout_constraintBottom_toTopOf="@+id/listview_customers"
+        app:layout_constraintEnd_toEndOf="@+id/listview_customers" />
+</androidx.constraintlayout.widget.ConstraintLayout>
